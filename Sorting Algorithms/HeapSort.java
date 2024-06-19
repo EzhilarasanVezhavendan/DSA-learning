@@ -7,6 +7,7 @@ public class HeapSort {
   }
 
   public void sort() {
+    //the binary heap which coded first
     BinaryHeap bh = new BinaryHeap(arr.length);
     for (int i = 0 ; i < arr.length; i++) {
       bh.insertInHeap(arr[i]);
