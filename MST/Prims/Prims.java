@@ -27,7 +27,7 @@ public class Prims {
 
 
 			for (WeightedNode neighbor : presentNode.neighbors) {
-				if (queue.contains(neighbor)) {//If vertex is not processed, only then enter in if-else
+				if (queue.contains(neighbor)) {//If vertex is not processed, only then enter in if
 					//If known weight of this �adjacent vertex� is more than current edge,
 					//then update �adjacent vertex�s� distance and parent
 					if (neighbor.distance > presentNode.weightMap.get(neighbor)) {
@@ -35,8 +35,8 @@ public class Prims {
 						neighbor.parent = presentNode;
 						queue.remove(neighbor); // Refresh the priority queue
 						queue.add(neighbor);
-					}//end of if-else
-				}//end of if-else
+					}//end of if
+				}//end of if
 			}//end of for loop
 		}//end of while loop
 
